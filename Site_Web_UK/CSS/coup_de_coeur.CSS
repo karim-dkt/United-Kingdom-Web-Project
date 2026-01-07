@@ -1,0 +1,90 @@
+    
+    .page {
+      margin: 24px 15px;
+      padding: 28px;
+      background: #fff;
+      border-radius: 6px;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.06);
+      flex-grow: 1;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    /* --- Disposition du haut : image à gauche, texte à droite --- */
+    .top-row  {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+      margin-bottom: 24px;
+      align-items: center;
+    }
+
+    img {
+      width: 340px;
+      height: 200px;
+      object-fit:cover;
+      border-radius: 10px;
+    }
+    img:hover {
+       opacity: 1 ;
+    }
+    .top-text h1 {
+      font-size: 1.4rem;
+      margin-bottom: 6px;
+    }
+
+    .top-text h2 {
+      font-size: 1.05rem;
+      font-weight: 500;
+      margin-bottom: 8px;
+      color: #555;
+    }
+
+    .top-text p {
+      font-size: 0.98rem;
+      line-height: 1.5;
+    }
+
+    /* Deux lignes larges (paragraphe séparé) */
+    .middle-text {
+      margin: 16px 0 26px;
+      font-size: 0.98rem;
+      line-height: 1.6;
+    }
+
+
+    /* --- Bas de page : gros bloc texte à gauche, petite image à droite --- */
+    .bottom {
+      display: grid;
+      grid-template-columns: 1.4fr 0.7fr;
+      gap: 24px;
+      align-items: center;
+    }
+
+    .bottom .right img {
+      width: 340px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 4px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 10px ;
+    }
+
+    .bottom .left p {
+      font-size: 0.98rem;
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 640px) {
+      .top-row {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .bottom {
+        grid-template-columns: 1fr;
+      }
+      .bottom .right img {
+        margin-left: 0;
+      }

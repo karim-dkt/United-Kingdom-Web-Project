@@ -1,0 +1,362 @@
+/* Styles de réinitialisation et de base */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+            color: #222;
+        }
+.page {
+    max-width: 60%;
+}
+        .page {     /* occupe toute la place disponible dans le centre */
+    margin: 0;            /* pas de marge externe qui recentre */
+    padding: 10px 0;      /* un peu d’air vertical, à ajuster selon ton goût */
+    background: transparent; /* pas de fond spécial, laisse celui de main/page */
+    border: none;         /* pas de cadre */
+    box-shadow: none;     /* pas d’ombre */
+}
+
+/* Si tu veux un léger espace entre le bloc Londres et "À ne pas manquer" */
+/* Section bas de page : ambiance guide de voyage */
+.page_reste {
+    max-width: 100%;
+    margin-top: 30px;
+    padding: 30px 0 40px 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(240, 245, 252, 0.95),
+        rgba(255, 255, 255, 1)
+    );
+    border-top: 3px solid #c0d0e8;
+}
+
+/* Titre principal de la section */
+.page_reste .highlights-london h2 {
+    font-size: 1.7rem;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+    text-align: center;
+    position: relative;
+}
+
+.page_reste .highlights-london h2::after {
+    content: "";
+    display: block;
+    width: 90px;
+    height: 3px;
+    margin: 12px auto 0;
+    background: linear-gradient(to right, #1b4d9b, #e63946);
+    border-radius: 999px;
+}
+
+/* Bloc général des highlights */
+.page_reste .highlight-row {
+    display: grid;
+    grid-template-columns: 1.1fr 1.3fr;
+    gap: 20px;
+    align-items: center;
+    padding: 18px 16px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.92);
+    border: 1px solid rgba(180, 190, 210, 0.8);
+    margin-bottom: 22px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+/* Variante inversée déjà dans ton HTML (image à droite) */
+.page_reste .highlight-row.reverse {
+    grid-template-columns: 1.3fr 1.1fr;
+}
+
+/* Effet au survol */
+.page_reste .highlight-row:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+    border-color: #9fb1d8;
+}
+
+/* Présentation des images */
+.page_reste .highlight-figure {
+    margin: 0;
+    border-radius: 14px;
+    overflow: hidden;
+    background: #000;
+    position: relative;
+}
+
+.page_reste {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Style des images */
+.page_reste img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover; /* IMPORTANT pour éviter distorsion */
+    border-radius: 10px;
+    transition: transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+/* Effet hover */
+.page_reste img:hover {
+    transform: scale(1.03);
+    filter: brightness(1.1);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.35);
+}
+
+
+/* Zoom léger au survol du bloc */
+.page_reste .highlight-row:hover .highlight-figure img {
+    transform: scale(1.06);
+    opacity: 1;
+}
+
+/* Légende sous l’image */
+.page_reste .highlight-figure figcaption {
+    font-size: 0.82rem;
+    padding: 6px 10px;
+    background: rgba(0, 0, 0, 0.65);
+    color: #f5f5f5;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Texte à droite de l’image */
+.page_reste .highlight-text h3 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: #123055;
+}
+
+.page_reste .highlight-text p {
+    font-size: 0.98rem;
+    line-height: 1.7;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+/* Liste d’éléments clés (lieux, activités, etc.) */
+.page_reste .highlight-text ul {
+    margin: 4px 0 10px 18px;
+    padding: 0;
+}
+
+.page_reste .highlight-text ul li {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 4px;
+}
+
+/* Petites astuces mises en avant */
+.page_reste .highlight-tip {
+    font-size: 0.9rem;
+    margin-top: 4px;
+    padding: 6px 8px;
+    border-left: 3px solid #1b4d9b;
+    background: rgba(230, 239, 255, 0.7);
+}
+
+/* Responsive bas de page */
+@media (max-width: 800px) {
+    .page_reste .highlight-row,
+    .page_reste .highlight-row.reverse {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+        /* --- Section 1: Bloc Image du Haut (Plein Largeur) --- */
+        .top-image-block {
+            /* Simule le cadre épais du croquis */
+            border: 4px solid #222; 
+            border-radius: 4px;
+            overflow: hidden;
+            margin-bottom: 30px;
+        }
+
+        .top-image-block img {
+            width: 100%; /* L'image prend toute la largeur du bloc */
+            height: auto;
+            display: block;
+            object-fit: cover;
+            /* Placeholder pour l'image */
+            background-color: #ddd; 
+            min-height: 150px;
+        }
+
+        .hero-london {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 24px;
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+.hero-text h1 {
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+.hero-text h2 {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 12px;
+}
+
+.hero-text p {
+    line-height: 1.6;
+    font-size: 0.98rem;
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Cartes des 3 blocs */
+.london-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-bottom: 24px;
+}
+
+.london-card {
+    background: #f7f8fa;
+    border-radius: 8px;
+    padding: 16px 18px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.04);
+}
+
+.london-card h3 {
+    margin-bottom: 8px;
+    font-size: 1.05rem;
+}
+
+.london-card p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Séparateur */
+.section-separator {
+    border: none;
+    height: 1px;
+    background: linear-gradient(to right, #ccc, #eee, #ccc);
+    margin: 24px 0;
+}
+
+/* Highlights */
+.highlights-london h2 {
+    font-size: 1.4rem;
+    margin-bottom: 18px;
+    text-align: center;
+}
+
+.highlight-row {
+    display: grid;
+    grid-template-columns: 1.1fr 1.2fr;
+    gap: 18px;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+.highlight-row.reverse {
+    grid-template-columns: 1.2fr 1.1fr;
+}
+
+.highlight-image img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    display: block;
+}
+
+.highlight-text h3 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.highlight-text p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+    .hero-london,
+    .highlight-row,
+    .highlight-row.reverse,
+    .london-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+        /* --- Section 2: Les Lignes de Texte Horizontales --- */
+        .horizontal-lines-group {
+            margin-bottom: 40px;
+        }
+
+        .horizontal-line {
+            /* Pour simuler les traits épais et horizontaux */
+            border-bottom: 3px solid #333;
+            padding: 5px 0 8px 0;
+            margin: 12px 0; /* Espace entre les lignes */
+            font-size: 1.05rem;
+            color: #444;
+        }
+        
+        /* Enlève la marge du haut pour le premier élément */
+        .horizontal-line:first-child {
+            margin-top: 0;
+        }
+
+        /* --- Section 3: Les Trois Blocs Rectangulaires du Bas --- */
+        .bottom-cards-group {
+            display: flex;
+            flex-direction: column; /* Empilement vertical comme sur le croquis */
+            gap: 18px; /* Espace entre les blocs */
+        }
+
+        .info-card {
+            padding: 18px 25px;
+            /* Simule les cadres épais et rectangulaires */
+            border: 4px solid #222; 
+            border-radius: 4px;
+            background-color: #f7f7f7; /* Léger fond pour distinguer les blocs */
+            font-size: 1rem;
+            line-height: 1.5;
+            text-align: center;
+        }
+        
+        .info-card strong {
+            display: block; /* Force le titre à sauter une ligne */
+            font-size: 1.15rem;
+            margin-bottom: 5px;
+        }
+
+        /* --- Réactivité --- */
+        @media (max-width: 480px) {
+            .page {
+                margin: 0;
+                padding: 15px;
+                border-radius: 0;
+                box-shadow: none;
+            }
+            .info-card {
+                padding: 15px;
+            }
+        }

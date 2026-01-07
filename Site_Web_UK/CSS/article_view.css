@@ -1,0 +1,18 @@
+.article_view {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    font-family: Cambria, Times, 'Times New Roman', serif;
+}
+
+div.centre_news {
+            display: flex ;
+            flex-direction: column;
+        }
+div.titre_date{
+    display: flex ;
+    justify-content: space-between;
+    font-weight: bolder;
+}
