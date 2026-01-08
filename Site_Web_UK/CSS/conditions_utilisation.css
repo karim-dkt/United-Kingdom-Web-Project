@@ -1,0 +1,64 @@
+/* --- AMÉLIORATION DU CONTENU CGU (conditions.css) --- */
+
+.conditions-content {
+    /* Garder le padding et le max-width */
+    padding: 40px 20px;
+    max-width: 850px; /* Augmenté légèrement pour un meilleur flux de texte */
+    margin: 0 auto;
+    color: #E0E0E0; /* Gris très clair pour le texte principal */
+    background-color: #252525; /* Petit ajustement du fond pour séparer du fond de page */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Ombre légère pour effet de profondeur */
+}
+
+.conditions-content h1 {
+    font-size: 2.8em;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #4CAF50; /* Vert ou couleur d'accentuation forte */
+    font-weight: 700;
+}
+
+.conditions-content .intro-text {
+    text-align: center;
+    font-size: 1.2em;
+    color: #AAAAAA;
+    margin-bottom: 40px;
+    border-bottom: 1px dashed #444; /* Séparateur léger */
+    padding-bottom: 20px;
+}
+
+.conditions-content h2 {
+    font-size: 1.9em;
+    color: #FFFFFF; /* Titre des articles en blanc pur */
+    border-bottom: 3px solid #4CAF50; /* Ligne d'accentuation sous le titre */
+    padding-bottom: 8px;
+    margin-top: 45px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.conditions-content p,
+.conditions-content li {
+    line-height: 1.7; /* Améliore la lecture */
+    font-size: 1.05em;
+    margin-bottom: 15px;
+}
+
+.conditions-content ul {
+    margin-left: 30px;
+    padding-left: 0;
+    list-style-type: '— '; /* Style de liste plus moderne (ou disc) */
+    color: #E0E0E0;
+}
+
+/* Style spécifique pour la date */
+.conditions-content .date-mise-a-jour {
+    margin-top: 60px;
+    text-align: center;
+    font-style: italic;
+    font-size: 0.9em;
+    color: #777777;
+    padding-top: 10px;
+    border-top: 1px solid #444;
+}

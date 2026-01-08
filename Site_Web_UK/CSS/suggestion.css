@@ -1,0 +1,102 @@
+/* -------------------- STYLES DU CONTENU PRINCIPAL DE LA PAGE SUGGESTIONS -------------------- */
+
+/* Assurez-vous que le conteneur principal a la bonne largeur et couleur */
+.suggestions-content {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    /* Pour que le contenu ne soit pas trop large par rapport à l'aside */
+}
+
+.suggestions-content h1 {
+    font-size: 2.2em;
+    text-align: center;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.suggestions-content .intro-text {
+    text-align: center;
+    font-size: 1em;
+    color: rgb(199, 202, 202);
+    margin-bottom: 30px;
+}
+
+/* -------------------- STYLES DU FORMULAIRE (Basé sur le thème sombre) -------------------- */
+
+.suggestion-form {
+    /* Fond sombre similaire aux blocs du footer */
+    background-color: rgb(40, 40, 46); 
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.suggestion-form:hover {
+     transform: scale(1.01);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #fff;
+    font-size: 1em;
+}
+
+/* Styles pour tous les champs (input, select, textarea) */
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgb(80, 80, 80);
+    border-radius: 6px;
+    /* Couleur sombre pour les champs */
+    background-color: rgb(50, 50, 56); 
+    color: white;
+    font-size: 1em;
+    box-sizing: border-box; 
+    transition: border-color 0.3s ease;
+}
+
+.form-group textarea {
+    resize: vertical; /* Permet le redimensionnement vertical */
+}
+
+/* Effet de focus (quand l'utilisateur clique dans le champ) */
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    /* Couleur bleue/primaire au focus */
+    border-color: rgb(28, 28, 246); 
+    outline: none;
+}
+
+/* Style du bouton d'envoi */
+.submit-btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    /* Couleur d'accentuation (bleu) */
+    background-color: rgb(28, 28, 246); 
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 30px;
+}
+
+.submit-btn:hover {
+    background-color: rgb(50, 50, 250);
+    transform: translateY(-2px);
+}

@@ -1,0 +1,244 @@
+
+/* ----------- CONTAINER PRINCIPAL ----------- */
+.article-wrapper {
+    position: relative;
+    max-width: 70%;
+    margin: 20px auto;
+    background: white;
+    padding: 40px;
+    margin-top: 20px;
+    padding-top: 90px ;
+    border-radius: 18px;
+    border-top-left-radius: 0px ;
+    border-top-right-radius: 0px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.08);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+uL.position-list {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0px;
+    list-style-type: none;
+    padding-left: 0px;
+    margin-bottom: 50px;
+    margin-top: 0px ;
+    font-size: 18px;
+    color: black;
+    width: 100%;
+    transition: background-color 0.3s, color 0.3s;
+    --position-list-height: 60px;
+}
+uL.position-list li:hover {
+    background-color: rgb(140, 143, 147);
+    color: black;
+}
+uL.position-list li {
+    width: 34%;
+    padding: 20px 15px;
+    margin: 0px;
+    cursor: pointer;
+    text-align: center;
+}
+/* ----------- HEADER (texte + image) ----------- */
+.article-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    font-size: 120%;
+    line-height: 30px;
+}
+
+.article-info h1 {
+    margin: 0;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.subtitle {
+    margin-top: 8px;
+    font-size: 17px;
+    color: #656565;
+}
+
+.description {
+    margin-top: 15px;
+    font-size: 19px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.article-image img {
+    width: 260px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+}
+
+/* ----------- SEPARATOR ----------- */
+.separator {
+    margin: 35px 0;
+    border: none;
+    border-top: 2px solid #454545;
+}
+
+/* ----------- FORMULAIRE ----------- */
+.form-title {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.styled-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* ----------- GROUPES ----------- */
+.form-group label {
+    font-weight: 600;
+    margin-bottom: 6px;
+    display: block;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 15px;
+    transition: 0.25s;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 1.5px ;
+}
+
+.form-group textarea {
+    height: 100px ;
+}
+
+/* Effet focus moderne */
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #0059ff;
+    box-shadow: 0 0 0 4px rgba(0, 89, 255, 0.15);
+    outline: none;
+}
+
+/* ----------- BOUTON ----------- */
+.submit-btn {
+    width: 300px ;
+    background: #0044ff;
+    color: white;
+    padding: 15px;
+    font-size: 17px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.25s;
+    margin: 10px auto;  
+    font-weight: 900;  
+}
+
+.submit-btn:hover {
+    background: #0003c9;
+}
+div.alert {
+    position: absolute ;
+    top:510px ;
+    left: 150px;
+    background-color:bisque;
+    font-size: 140%;
+    border-radius: 10px;
+    color: white;
+    transition: opacity 1s;
+    padding: 5px 15px;
+    padding-right: 50px;
+    
+}
+div.alert.fade-out {
+    opacity: 0 ;
+}
+span.close_alert {
+    position: absolute;
+    top: -9px ;
+    right: 5px;
+    font-size: 140%;
+    font-weight: bolder;
+    cursor: pointer;
+    color: white;
+    transition: all 0.3s;
+}
+span.close_alert:hover{
+    transform: rotate(90deg);
+    color: #333;
+}
+.alert.success {
+    background-color: rgb(22, 138, 22);
+
+
+;
+}
+.alert.fail {
+    background-color: rgb(238, 32, 32) ;
+}
+
+.news-table {
+    margin: 30px auto;
+    width: 80%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.news-table th, .news-table td {
+    padding: 12px;
+    border: 1px solid #ccc;
+}
+
+.news-table th {
+    background: #444;
+    color: white;
+}
+
+.delete-btn {
+    color: red;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.delete-btn:hover {
+    text-decoration: underline;
+}
+
+div.news-management-section,div.modification {
+    position: absolute;
+    top:170px ;
+    left: 200px;
+    width: 72%;
+    margin: 30px auto;
+    background: white;
+    padding: 40px;
+    margin-top: 0px;
+    padding-top: 90px ;
+    border-radius: 18px;
+    border-top-left-radius: 0px ;
+    border-top-right-radius: 0px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.08);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+div#update-alert {
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    top: calc(var(--position-list-height) + 12px); /* 12px d'espace après la list */
+    z-index: 999;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
