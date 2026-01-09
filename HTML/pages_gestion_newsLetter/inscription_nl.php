@@ -128,7 +128,7 @@ $res_execution = null;
 
             <div id="newsLetter">
                 <div class="abt_nl">
-                    <h3>Abonnez-vous à notre news letter</h3>
+                    <h3>Abonnez-vous à notre newsletter</h3>
                     <h5 style="color: rgb(121, 123, 124);">Rester informé des nouveautés sur le Royaume-Uni</h5>
                     <p style="font: 75%;">Recevez dans votre boite mail des articles sur les nouveautés du Royaume-Uni, nos suggestions de sites et monuments
                         à visiter, des changements dans differentes villes et les infos à la Une du pays.
@@ -152,7 +152,7 @@ $res_execution = null;
                     </div>
                 <?php endif ?>
             <p>
-                Remplissez le formulaire ci-dessous pour vous abonner, afin de recevoir notre news_letter sur votre boite mail !
+                Remplissez le formulaire ci-dessous pour vous abonner, afin de recevoir notre newsletter sur votre boite mail !
             </p>
 
              <form action="" method = "post">
@@ -184,7 +184,7 @@ $res_execution = null;
             <source src="../../video/video_uk.mp4" type="video/mp4">
           </video>
             <div class="bloc_nouveautes" style=" text-align: center; background-color: rgb(249, 246, 246);">
-                <p style="font-size: 120%;"> Nouvautés  </p>
+                <p style="font-size: 120%;"> Nouveautés  </p>
                 <?php
                     $numb_row = 0 ;
                     while($news=$rows->fetch()) {

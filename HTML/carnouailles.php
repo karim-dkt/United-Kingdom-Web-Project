@@ -151,7 +151,7 @@ $rows = $conn->query($req_pageAcc) ;
             <source src="../video/video_uk.mp4" type="video/mp4">
           </video>
            <div class="bloc_nouveautes" style=" text-align: center; background-color: rgb(249, 246, 246); padding-bottom:20px;">
-                <p style="font-size:120%;">Nouvautés</p>
+                <p style="font-size:120%;">Nouveautés</p>
             <?php
                     $numb_row = 0 ;
                     while($news=$rows->fetch()) {

@@ -61,8 +61,8 @@ if (isset($_POST['submit_suggestion'])) {
             
             // --- B. Envoi d'e-mail à l'administrateur ---
             
-            $mail = new PHPMailer(true);
-            $admin_email = "votre_email_admin@exemple.com"; // **<<< À MODIFIER >>>**
+            $mail = new PHMailer(true);
+            $admin_email = "votre_email_admin@exemple.com"; 
             
             try {
                 // Config SMTP (Réutilisation de vos paramètres Gmail)
@@ -104,7 +104,7 @@ if (isset($_POST['submit_suggestion'])) {
                 $mail->Body = $mail_body;
                 $mail->send();
                 
-            } catch (Exception $e) {
+            } catch (PDOException $e) {
                  // Si l'e-mail échoue, on loggue l'erreur pour débogage
                  error_log("Erreur envoi mail Admin (Suggestion): " . $e->getMessage());
             }
@@ -280,7 +280,7 @@ $rows = $conn->query($req_pageAcc) ;
             <source src="../video/video_uk.mp4" type="video/mp4">
           </video>
             <div class="bloc_nouveautes" style=" text-align: center; background-color: rgb(249, 246, 246);">
-                <p style="font-size: 120%;"> Nouvautés  </p>
+                <p style="font-size: 120%;"> Nouveautés  </p>
                 <?php
                     $numb_row = 0 ;
                     while($news=$rows->fetch()) {
