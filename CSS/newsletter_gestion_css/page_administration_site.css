@@ -1,0 +1,155 @@
+
+/* ----------- CONTAINER PRINCIPAL ----------- */
+.article-wrapper {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+    background: white;
+    padding: 40px;
+    border-radius: 18px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.08);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* ----------- HEADER (texte + image) ----------- */
+.article-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    font-size: 120%;
+    line-height: 30px;
+}
+
+.article-info h1 {
+    margin: 0;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.subtitle {
+    margin-top: 8px;
+    font-size: 17px;
+    color: #656565;
+}
+
+.description {
+    margin-top: 15px;
+    font-size: 19px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.article-image img {
+    width: 260px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+}
+
+/* ----------- SEPARATOR ----------- */
+.separator {
+    margin: 35px 0;
+    border: none;
+    border-top: 2px solid #454545;
+}
+
+/* ----------- FORMULAIRE ----------- */
+.form-title {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.styled-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* ----------- GROUPES ----------- */
+.form-group label {
+    font-weight: 600;
+    margin-bottom: 6px;
+    display: block;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 15px;
+    transition: 0.25s;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 1.5px ;
+}
+
+.form-group textarea {
+    height: 100px ;
+}
+
+/* Effet focus moderne */
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #0059ff;
+    box-shadow: 0 0 0 4px rgba(0, 89, 255, 0.15);
+    outline: none;
+}
+
+/* ----------- BOUTON ----------- */
+.submit-btn {
+    width: 300px ;
+    background: #0044ff;
+    color: white;
+    padding: 15px;
+    font-size: 17px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.25s;
+    margin: 10px auto;  
+    font-weight: 900;  
+}
+
+.submit-btn:hover {
+    background: #0003c9;
+}
+div.alert {
+    position: absolute ;
+    top:510px ;
+    left: 150px;
+    background-color:bisque;
+    font-size: 140%;
+    border-radius: 10px;
+    color: white;
+    transition: opacity 1s;
+    padding: 5px 15px;
+    padding-right: 50px;
+    
+}
+div.alert.fade-out {
+    opacity: 0 ;
+}
+span.close_alert {
+    position: absolute;
+    top: -9px ;
+    right: 5px;
+    font-size: 140%;
+    font-weight: bolder;
+    cursor: pointer;
+    color: white;
+    transition: all 0.3s;
+}
+span.close_alert:hover{
+    transform: rotate(90deg);
+    color: #333;
+}
+.alert.success {
+    background-color: rgb(22, 138, 22);
+}
+.alert.fail {
+    background-color: rgb(238, 32, 32) ;
+}

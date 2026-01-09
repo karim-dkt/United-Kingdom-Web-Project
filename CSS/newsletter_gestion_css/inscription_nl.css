@@ -1,0 +1,96 @@
+/* Général */
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: #fff;
+}
+
+/* Conteneur du formulaire */
+#formulaire {
+    position: relative;
+    background: #fff;
+    padding: 30px 25px;
+    border-radius: 12px;
+    width: 600px ;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    margin: 50px 30px;
+}
+
+div#newsLetter{
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+
+}
+#form_contact {
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+/* Champs input et labels */
+#formulaire div {
+    position: relative;
+    width: 580px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+
+}
+
+#formulaire input[type="text"],
+#formulaire input[type="email"] {
+    width: 100%;
+    padding: 12px 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 100%;
+    background: none;
+    width: 550px;
+    margin: 0 auto;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#formulaire label {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    color: #777;
+    font-size: 19px;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+/* Animation flottante pour les labels */
+#formulaire input:focus + label,
+#formulaire input:not(:placeholder-shown) + label {
+    top: -10px;
+    left: 5px;
+    font-size: 16px;
+    color: #007bff;
+    background: #fff;
+    padding: 0 5px;
+}
+
+/* Bouton submit */
+#submit {
+    width: 400px;
+    padding: 12px;
+    margin: 0 auto ;
+    border-radius: 8px;
+    border: none;
+    background: #0044ff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: 95px;
+}
+
+#submit:hover {
+    background: #001498;
+}
+
